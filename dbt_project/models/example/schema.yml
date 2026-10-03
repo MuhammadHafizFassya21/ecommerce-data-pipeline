@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: raw_transactions
+
+models:
+  - name: fct_user_orders
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: total_money_spent
+        tests:
+          - not_null

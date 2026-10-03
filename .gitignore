@@ -1,0 +1,15 @@
+# Virtual Environment
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# dbt compiled files
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Environment Variables
+.env
